@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+  web:
+    build: .
+
+    command: /usr/bin/supervisord -c /etc/supervisor/conf.d/supervisord.conf   #python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/code
+    ports:
+      - "80:80"
+      - "8000:8000"
+      - "8080:8080"
+      - "9001:9001"
+    env_file:
+      - ./common.env
