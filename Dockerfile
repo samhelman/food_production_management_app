@@ -76,7 +76,7 @@ RUN mkdir /logs/django
 RUN rm /usr/bin/python
 RUN ln -s /usr/bin/python3 /usr/bin/python
 
-RUN cp -r /code/oracle/* /usr/local/lib
+#RUN cp -r /code/oracle/* /usr/local/lib
 
 WORKDIR /code
 

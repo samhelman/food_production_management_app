@@ -42,10 +42,11 @@ INSTALLED_APPS = [
     'debug_toolbar',
     'django_extensions',
     'django_jinja',
+    'main_app'
     #  'django_filters',
     #  'generic_relations',
-    'rest_framework',
-    'wkhtmltopdf',
+    # 'rest_framework',
+    # 'wkhtmltopdf',
 ]
 
 
@@ -213,19 +214,19 @@ TARGET_ENVIRONMENT = 'DEV'
 LOGIN_URL = '/'
 
 #if we want to add our own user model fields
-AUTH_USER_MODEL = 'main_app.User'
-
-REST_FRAMEWORK = {
-    'DEFAULT_FILTER_BACKENDS': (
-        'rest_framework_filters.backends.DjangoFilterBackend',
-    ),
-    'DEFAULT_AUTHENTICATION_CLASSES': (
-         'rest_framework.authentication.BasicAuthentication',
-    ),
-    'DEFAULT_PERMISSION_CLASSES':(
-        'rest_framework.permissions.IsAuthenticated',
-    )
-}
+# AUTH_USER_MODEL = 'main_app.User'
+#
+# REST_FRAMEWORK = {
+#     'DEFAULT_FILTER_BACKENDS': (
+#         'rest_framework_filters.backends.DjangoFilterBackend',
+#     ),
+#     'DEFAULT_AUTHENTICATION_CLASSES': (
+#          'rest_framework.authentication.BasicAuthentication',
+#     ),
+#     'DEFAULT_PERMISSION_CLASSES':(
+#         'rest_framework.permissions.IsAuthenticated',
+#     )
+# }
 
 # ROLLBAR = {
 #     'access_token': '29cfa98c4db84123ae0837d6b0dea286',
