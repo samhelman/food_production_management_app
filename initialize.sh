@@ -16,6 +16,6 @@ fi
 
 #crontab ./crontab/crontab.txt
 
-#python /code/inspection_reporting/main_app/manage.py collectstatic
-#python /code/inspection_reporting/main_app/manage.py makemigrations
-#python /code/inspection_reporting/main_app/manage.py migrate --noinput
+#python /code/project_directory/main_app/manage.py collectstatic
+#python /code/project_directory/main_app/manage.py makemigrations
+#python /code/project_directory/main_app/manage.py migrate --noinput
