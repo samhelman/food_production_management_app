@@ -202,8 +202,8 @@ MEDIA_URL = '/media/'
 #STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
 #STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-STATICFILES_DIRS = ['/code/project_directory/web/static', ]
-STATIC_ROOT = '/code/project_directory/web' #os.path.join(BASE_DIR,)
+# STATICFILES_DIRS = ['/code/project_directory/web/static', ]
+STATIC_ROOT = '/code/project_directory/web/static' #os.path.join(BASE_DIR,)
 
 STATIC_URL = '/static/'
 
