@@ -22,7 +22,7 @@ fi
 
 
 if [ "$TARGET_ENVIRONMENT" == "DEV" ]; then
-    cd /code/lds_cloud/gulp && /node_modules/gulp/bin/gulp.js
+    cd /code/project_directory/gulp && /node_modules/gulp/bin/gulp.js
     sleep 5
     #because it takes a while for gulp to propery start up, it exists the initialize instance right away
 fi

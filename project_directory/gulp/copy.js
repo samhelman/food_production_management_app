@@ -6,13 +6,13 @@ const path = require("path");
 // config
 const assetsDirs = [
   {
-    src: "../lds/static/custom/js/",
+    src: "../main_app/static/custom/js/",
     dist: "../web/static/js",
     file_name: "/application.js",
     force: true
   },
   {
-    src: "../lds/static/custom/css/",
+    src: "../main_app/static/custom/css/",
     dist: "../web/static/css",
     file_name: "/application.css",
     force: true

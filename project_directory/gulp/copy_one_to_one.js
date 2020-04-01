@@ -11,12 +11,12 @@ const assetsDirs = [
     force: true
   },
     {
-    src: "../lds/static/custom/images/",
+    src: "../main_app/static/custom/images/",
     dist: "../web/static/images",
     force: true
   },
     {
-    src: "../lds/static/custom/sound/",
+    src: "../main_app/static/custom/sound/",
     dist: "../web/static/sound",
     force: true
   }

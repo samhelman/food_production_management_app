@@ -15,8 +15,8 @@ const copy_one_to_one = require("./copy_one_to_one.js");
 
 // Watch files
 function watchFiles() {
-  gulp.watch("../lds/static/custom/js/*.js", gulp.series(clean.custom, copy.assets));
-  gulp.watch("../lds/static/custom/css/*.css", gulp.series(clean.custom, copy.assets));
+  gulp.watch("../main_app/static/custom/js/*.js", gulp.series(clean.custom, copy.assets));
+  gulp.watch("../main_app/static/custom/css/*.css", gulp.series(clean.custom, copy.assets));
 
 }
 
