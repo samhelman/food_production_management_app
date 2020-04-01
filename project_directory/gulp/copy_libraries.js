@@ -5,7 +5,7 @@ const path = require("path");
 
 // config
 const assetsDirs = [
-    {
+   /* {
         src: [
             "/node_modules/jquery/dist/jquery.min.js",
             "/node_modules/tether/dist/js/tether.min.js",
@@ -40,7 +40,7 @@ const assetsDirs = [
         dist: "../web/static/css",
         file_name: "/framework.css",
         force: true
-    }
+    }*/
 
 ];
 

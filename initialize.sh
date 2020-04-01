@@ -19,3 +19,10 @@ fi
 #python /code/project_directory/main_app/manage.py collectstatic
 #python /code/project_directory/main_app/manage.py makemigrations
 #python /code/project_directory/main_app/manage.py migrate --noinput
+
+
+if [ "$TARGET_ENVIRONMENT" == "DEV" ]; then
+    cd /code/lds_cloud/gulp && /node_modules/gulp/bin/gulp.js
+    sleep 5
+    #because it takes a while for gulp to propery start up, it exists the initialize instance right away
+fi
