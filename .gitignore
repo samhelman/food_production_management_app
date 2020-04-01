@@ -1,0 +1,6 @@
+
+supervisord\.pid
+
+*.pyc
+
+\.idea/

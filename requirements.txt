@@ -2,7 +2,7 @@ Django==2.0.13
 #cx_Oracle==6.0.0
 #djangorestframework
 #Jinja2
-boto3
+#boto3
 django-debug-toolbar
 #django-dirtyfields
 django-extensions
