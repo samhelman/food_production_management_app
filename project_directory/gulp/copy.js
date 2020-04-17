@@ -43,13 +43,8 @@ function copyAssets(done) {
       let srcFile = file;
       let distFile = srcFile.replace(sourceDir, distDir);
       let distDirname = path.dirname(distFile);
-
-      fs.readFile(file, (err, data) => {
-        if (err) throw err;
-        fs.appendFile(dir.dist+dir.file_name,data, (err) => {
-            if (err) throw err;
-          });
-      });
+      var data = fs.readFileSync(file);
+      fs.appendFileSync(dir.dist+dir.file_name,data);
 
     });
   });

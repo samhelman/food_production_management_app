@@ -24,10 +24,10 @@ function watchFiles() {
 const watch = gulp.parallel(watchFiles, server.init);
 const build = gulp.series(
   clean.dist,
-  gulp.parallel(copy_one_to_one.assets),
-  gulp.parallel(copy_libraries.assets),
-  gulp.parallel(copy.assets),
-    watch
+  copy_one_to_one.assets,
+  copy_libraries.assets,
+  copy.assets,
+  watch
 );
 
 // expose tasks to CLI

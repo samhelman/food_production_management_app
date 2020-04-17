@@ -42,13 +42,10 @@ function copyAssets(done) {
     let files = glob.sync(`${sourceDir}/**/*`, { nodir: true });
     // copy each file to dist dir
     files.forEach(function(file) {
-        console.log(file);
       let srcFile = file;
       let distFile = srcFile.replace(sourceDir, distDir);
       let distDirname = path.dirname(distFile);
-      fs.copyFile(srcFile, distFile, err => {
-          if (err) throw err;
-      });
+      fs.copyFileSync(srcFile, distFile);
     });
   });
   done();
