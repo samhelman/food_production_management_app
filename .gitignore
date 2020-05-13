@@ -1,0 +1,13 @@
+
+supervisord\.pid
+
+*.pyc
+
+\.idea/
+
+project_directory/web/static/admin/
+
+project_directory/web/static/debug_toolbar/
+
+project_directory/web/static/django_extensions/
+supervisord\.log

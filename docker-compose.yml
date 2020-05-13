@@ -4,7 +4,7 @@ services:
   web:
     build: .
 
-    command: /usr/bin/supervisord -c /etc/supervisor/conf.d/supervisord.conf   #python manage.py runserver 0.0.0.0:8000
+    command: /usr/local/bin/supervisord -c /etc/supervisor/conf.d/supervisord.conf
     volumes:
       - .:/code
     ports:
