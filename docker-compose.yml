@@ -4,7 +4,7 @@ services:
   web:
     build: .
 
-    command: /usr/local/bin/supervisord -c /etc/supervisor/conf.d/supervisord.conf
+    command: /usr/local/bin/supervisord -c /etc/supervisord.conf
     volumes:
       - .:/code
     ports:
