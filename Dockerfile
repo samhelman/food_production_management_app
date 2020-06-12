@@ -68,6 +68,7 @@ RUN rm /etc/nginx/sites-enabled/default
 
 # Run Supervisor
 COPY ./conf/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+COPY ./conf/supervisord.conf /etc/supervisord.conf
 
 # upon docker-compose up, the yml file will encounter premission issues
 RUN chmod ug+x /usr/local/bin/supervisord
