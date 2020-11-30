@@ -28,6 +28,9 @@ apt-get install -y python3-pip && \
 apt-get install -y vim && \
 apt-get install -y cron
 
+# upgrades the current version of pip
+RUN python3 -m pip install -I pip
+
 RUN npm update
 RUN npm init -y
 
