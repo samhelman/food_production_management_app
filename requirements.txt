@@ -1,17 +1,16 @@
-Django==3.0.5
-supervisor==4.1.0
-django-debug-toolbar
-django-extensions
-django-jinja
-gunicorn
-urllib3
+Django==3.2.3
+supervisor==4.2.2
+django-debug-toolbar==3.2.1
+django-extensions==3.1.3
+django-jinja==2.7.0
+gunicorn==20.1.0
+urllib3==1.26.4
 
 
 #cx_Oracle==6.0.0
 #djangorestframework
 #Jinja2
-#boto3
-#django-dirtyfields
+#boto3#django-dirtyfields
 #drf-nested-routers
 #rest-framework-generic-relations
 #django-wkhtmltopdf
