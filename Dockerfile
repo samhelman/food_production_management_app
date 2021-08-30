@@ -23,6 +23,7 @@ apt-get install -y libpq-dev && \
 apt-get install -y libffi-dev && \
 apt-get install -y nginx && \
 apt-get install -y npm && \
+apt-get install -y postgis && \
 apt-get install -y postgresql-client* && \
 apt-get install -y python3-pip && \
 apt-get install -y vim && \
@@ -36,15 +37,7 @@ RUN npm init -y
 
 # install node dependencies for gulp
 RUN npm install gulp@4.0.2 gulp-load-plugins@1.5.0 q@1.5.1 browser-sync@2.24.5 \
-gulp-include@2.3.1  del@3.0.0 \
-jquery bootstrap@4.0.0-alpha.6
-
-# stuff commenly used in our project
-#boot strap material design needs less than version 2 of popper
-#bootstrap-material-design@4.0.0-beta.4  popper.js@1.12.6\
-# datepicker, jquery-ui, bootstrap select for ui improvements (moment helps javascript date formatting to be easier)
-#eonasdan-bootstrap-datetimepicker moment jquery-ui-dist bootstrap-select font-awesome
-
+gulp-include@2.3.1  del@3.0.0 jquery bootstrap@4.6 popper.js@1.16.1
 
 # Configure Django project
 ADD . /code
