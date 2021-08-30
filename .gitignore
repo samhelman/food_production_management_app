@@ -11,4 +11,4 @@ supervisord\.pid
 /project_directory/web/
 supervisord\.log
 
-.sqlite3
+db.sqlite3
