@@ -1,3 +1,11 @@
 from django.contrib import admin
 
-# Register your models here.
+from configuration.models import (
+    ProductConfig,
+    RecipeConfig,
+    RecipeStepConfig,
+)
+
+admin.site.register(ProductConfig)
+admin.site.register(RecipeConfig)
+admin.site.register(RecipeStepConfig)

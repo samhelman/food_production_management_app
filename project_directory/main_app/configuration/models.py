@@ -23,6 +23,9 @@ class AbstractConfig(models.Model):
     )
     active = models.BooleanField()
 
+    def __str__(self):
+        return self.name
+
 class ProductConfig(AbstractConfig):
     pass
 

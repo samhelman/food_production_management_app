@@ -1,3 +1,9 @@
 from django.contrib import admin
 
-# Register your models here.
+from organisations.models import (
+    ParentOrganisation,
+    ChildOrganisation,
+)
+
+admin.site.register(ParentOrganisation)
+admin.site.register(ChildOrganisation)

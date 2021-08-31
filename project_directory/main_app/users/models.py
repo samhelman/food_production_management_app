@@ -8,7 +8,10 @@ from organisations.models import (
 )
 
 class User(AbstractUser):
-    employer = models.ForeignKey(ParentOrganisation, on_delete=models.CASCADE)
+    pass
+
+class UserProfile(models.Model):
+    employer = models.ForeignKey(ParentOrganisation, null=True, on_delete=models.CASCADE)
     assigned_child_organisation = models.ForeignKey(ChildOrganisation, null=True, on_delete=models.SET_NULL)
 
     def clean_assigned_child_organisation(self):
