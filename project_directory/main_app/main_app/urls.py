@@ -11,6 +11,7 @@ urlpatterns = [
     url(r'^configuration/', include(('configuration.urls', 'configuration'), namespace='configuration')),
     url(r'^production/', include(('production.urls', 'production'), namespace='production')),
     url(r'^audits/', include(('audits.urls', 'audits'), namespace='audits')),
+    url(r'^organisations/', include(('organisations.urls', 'organisations'), namespace='organisations')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 if settings.DEBUG:
